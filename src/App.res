@@ -1,20 +1,20 @@
 open ReactNative
 
+
 open Reanimated
-
 export animatedStyleUpdateExample = () => {
-  let randomWidth = Reanimated.useSharedValue(10., ~shouldRebuild=false)
+  let randomWidth = useSharedValue(10., ~shouldRebuild=false)
 
-  let config = {
+  let config:withTimingConfig = {
     duration: 500.,
     easing: easing.bezier(~x1=0.5, ~y1=0.01, ~x2=0., ~y2=1.),
   }
 
-  let animatedStyle = Reanimated.useAnimatedStyle(() => {
-    open Reanimated.AnimatedStyle
+  let animatedStyle = useAnimatedStyle(() => {
+    open AnimatedStyle
     style(~width=withTiming(randomWidth.value, config), ())
   })
-  
+
   <View
     style={Style.style(
       ~flex=1.,

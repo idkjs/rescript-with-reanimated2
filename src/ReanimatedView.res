@@ -1,2 +1,2 @@
-include ReactNative.View
-let make = Reanimated.createAnimatedComponent(ReactNative.View.make)
+  include ReactNative.View
+  let make = Reanimated.createAnimatedComponent(ReactNative.View.make)

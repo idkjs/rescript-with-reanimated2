@@ -6,8 +6,6 @@ var EasingStatic = {};
 
 var easing = ReactNativeReanimated.default.Easing;
 
-var Value = {};
-
 var SharedValue = {};
 
 var AnimationObject = {};
@@ -17,7 +15,6 @@ var AnimatedStyle = {};
 export {
   EasingStatic ,
   easing ,
-  Value ,
   SharedValue ,
   AnimationObject ,
   AnimatedStyle ,
