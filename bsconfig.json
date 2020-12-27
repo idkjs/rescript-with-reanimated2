@@ -1,0 +1,38 @@
+{
+  "name": "rescript-reanimated2",
+  "refmt": 3,
+  "reason": {
+    "react-jsx": 3
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "./src",
+      "subdirs": true
+    }
+  ],
+  "gentypeconfig": {
+    "language": "typescript",
+    "module": "es6",
+    "importPath": "relative",
+    "shims": {
+      "ReasonReact": "ReactShim",
+      "ReactNative": "ReactNative"
+    },
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  },
+  "bs-dependencies": [
+    "reason-react",
+    "reason-react-native"
+  ],
+  "warnings": {
+    "number": "-30-45"
+  }
+}
